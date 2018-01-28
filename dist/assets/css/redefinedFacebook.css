@@ -1,0 +1,16 @@
+#leftCol {
+    display: none !important;
+}
+
+#rightCol {
+    display: none !important;
+}
+
+#contentArea {
+    left: 40% !important;
+    right: 40% !important;
+}
+
+#pagelet_sidebar {
+    display: none !important;
+}

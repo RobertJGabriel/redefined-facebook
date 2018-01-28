@@ -1,0 +1,33 @@
+{
+    "name":"redefined-facebook",
+    "version":"1.0.0",
+    "manifest_version":2,
+    "description":"Making facebook simple again.",
+    "icons":{
+       "128":"/assets/img/icon.png"
+    },
+    "permissions":[
+       "tabs",
+       "*://*/*",
+       "http://*/*",
+       "https://*/*",
+       "<all_urls>",
+       "storage"
+    ],
+    "content_scripts":[
+       {
+          "matches":[
+             "*://*/*",
+             "file:///*/*"
+          ],
+          "js":[
+            "/assets/js/redefinedFacebook.js"
+          ],
+          "all_frames":true
+       }
+    ],
+    "web_accessible_resources":[
+       "/assets/css/redefinedFacebook.css"
+    ]
+ }
+ 
